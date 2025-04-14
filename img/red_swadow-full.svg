@@ -1,0 +1,36 @@
+<svg width="2217" height="560" viewBox="0 0 2217 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1937_616)">
+<ellipse cx="1108.5" cy="280" rx="868.5" ry="40" fill="#FF0000"/>
+</g>
+<g filter="url(#filter1_f_1937_616)">
+<ellipse cx="1108.5" cy="280" rx="868.5" ry="40" fill="#FF0000"/>
+</g>
+<g filter="url(#filter2_f_1937_616)">
+<ellipse cx="1108.5" cy="280" rx="434.25" ry="20" fill="#FF0000"/>
+</g>
+<g filter="url(#filter3_f_1937_616)">
+<ellipse cx="1109.16" cy="271" rx="673.088" ry="31" fill="#FF0000"/>
+</g>
+<defs>
+<filter id="filter0_f_1937_616" x="0" y="0" width="2217" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_1937_616"/>
+</filter>
+<filter id="filter1_f_1937_616" x="0" y="0" width="2217" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_1937_616"/>
+</filter>
+<filter id="filter2_f_1937_616" x="574.25" y="160" width="1068.5" height="240" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_1937_616"/>
+</filter>
+<filter id="filter3_f_1937_616" x="316.07" y="120" width="1586.17" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1937_616"/>
+</filter>
+</defs>
+</svg>

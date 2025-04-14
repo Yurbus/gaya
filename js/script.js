@@ -83,44 +83,18 @@ var i;
 
 // --------- header------------------------------------------------
 
-window.addEventListener('scroll', function () {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {  
-        header.style.top = '0px'; 
-        header.style.backgroundColor = 'white'; 
-    } else {
-        header.style.top = '52px'; 
-        header.style.backgroundColor = 'transparent'; 
-    }
-});
+// window.addEventListener('scroll', function () {
+//     const header = document.getElementById('header');
+//     if (window.scrollY > 50) {  
+//         header.style.top = '0px'; 
+//         header.style.backgroundColor = 'white'; 
+//     } else {
+//         header.style.top = '52px'; 
+//         header.style.backgroundColor = 'transparent'; 
+//     }
+// });
 
-// --------- Переключение языка ------------------------------------------------
 
-document.addEventListener('DOMContentLoaded', function() {
-    const headerLang = document.querySelector('.header__lang');
-    const langList = document.querySelector('.lang__list');
-
-    // Проверяем, является ли устройство мобильным
-    const isMobile = window.matchMedia('(max-width: 767px)').matches;
-
-    if (isMobile) {
-        headerLang.addEventListener('click', function(event) {
-            // Переключаем видимость меню при клике на мобильных устройствах
-            if (langList.style.display === 'block') {
-                langList.style.display = 'none';
-            } else {
-                langList.style.display = 'block';
-            }
-        });
-
-        // Закрываем меню при клике вне его области
-        document.addEventListener('click', function(event) {
-            if (!headerLang.contains(event.target)) {
-                langList.style.display = 'none';
-            }
-        });
-    }
-});
 
 
 
