@@ -525,6 +525,28 @@
 	.swiper-wrapper {
         margin-left: -215px;
     }
+	.about__content-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.row__wrapper {
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+	.row__wrapper {
+		.hello__text {
+			font-size: 28px;
+		}
+		.name__text {
+			padding-top: 20px;
+			text-align: left;
+			max-width: 100%;
+			font-size: 28px;
+		}
+	}
+	.about__photo {
+		margin-top: 30px;
+	}
 }
 @media (max-width: 639.98px) {
 	.cource__title {
@@ -550,6 +572,9 @@
 	.swiper-wrapper {
         margin-left: -80px;
     }
+	.adw__row-list {
+		grid-template-columns: 1fr;
+	}
 }
 @media (max-width: 479.98px) {
 	.action__button .img_eye {
