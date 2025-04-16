@@ -460,6 +460,65 @@
 .about__photo {
 }
 
+.about__items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 20px;
+	padding: 100px 0 40px;
+	margin: auto;
+}
+
+.box {
+	background-color: #ff0000;
+	border-radius: 15px;
+	padding: 32px 24px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.4;
+	height: 200px;
+	div {
+		max-width: 260px;
+	}
+}
+
+.large {
+	background-color: transparent;
+	border: 1px solid #333;
+	grid-column: span 1;
+	font-size: 32px;
+	font-weight: bold;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+
+.box.large::before {
+	content: "";
+	position: absolute;
+	background: url('../img/right_light.svg') no-repeat;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.icon {
+	width: 84px;
+	height: 84px;
+}
+
+.empty {
+	background: transparent;
+	border: 1px solid #333;
+}
+
+
 
 
 
@@ -502,6 +561,9 @@
 	.swiper-wrapper {
         margin-left: -285px;
     }
+	.about__items {
+		grid-template-columns: 1fr;
+	}
 }
 @media (max-width: 767.98px) {
 	.marketing {
