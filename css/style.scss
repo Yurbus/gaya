@@ -212,6 +212,7 @@
 	img {
 		width: 54px;
 		height: 54px;
+		margin-left: 12px;
 	}
 	&:hover {
 		background: #e6e6e6;
@@ -357,11 +358,9 @@
 .cource__button {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	max-width: 356px;
+	justify-content: center;
+	max-width: 346px;
 	margin: 64px auto 0;
-	.main__button {
-	}
 	.cource__btn-text {
 		color: #000;
 		font-weight: 800;
@@ -507,18 +506,160 @@
 	width: 50px;
 	height: 50px;
 }
-
 .icon {
-	width: 84px;
-	height: 84px;
+	display: flex;
+	align-items: center;
+	img {
+		width: 84px;
+		height: 84px;
+	}
 }
-
 .empty {
 	background: transparent;
 	border: 1px solid #333;
 }
 
+/*=============== programm ===========================*/ 
+.programm {
+}
+.about__body {
+}
+.course-container {
 
+}
+.course-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+	.course-title {
+		font-size: clamp(26px, 4vw, 44px);
+		font-weight: 800;
+		margin: 0;
+	}
+}
+
+.modules {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.module {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid #333;
+	border-radius: 12px;
+	padding: 24px;
+	.module__title-wrap {
+		margin-bottom: 22px;
+		.module-number {
+			color: #FF0000;
+			font-size: 14px;
+			font-weight: 600;
+			display: block;
+			margin-bottom: 8px;
+		}
+		.module-title {
+			font-size: 24px;
+			max-width: 350px;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin: 0 0 12px;
+		}
+	}
+	ul {
+		list-style: disc;
+		padding-left: 20px;
+		margin: 0;
+		li {
+			font-size: 14px;
+			line-height: 1.6;
+			margin-bottom: 8px;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '';
+				top: 8px;
+				left: -15px;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: #fff;
+			}
+		}
+		
+	}
+}
+
+.cta-button {
+	display: flex;
+	justify-content: center;
+	a {
+		margin: 24px auto 0;
+	}
+}
+
+/*============== reviews ============================*/
+.reviews {
+}
+.reviews__body {
+}
+.reviews-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.reviews-title {
+		font-weight: 650;
+		font-size: 44px;
+		line-height: 100%;
+		text-transform: uppercase;
+	}
+}
+.carousel_wrap {
+	margin-bottom: 50px;
+	.swiper {
+		.swiper-wrapper {
+			margin-left: 0;
+		}
+	}
+}
+.mySwiper2 {
+	.swiper-slide {
+		transition: transform 0.4s ease;
+		transform: scale(0.85);
+		opacity: 0.6;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.swiper-slide iframe {
+		width: 100%;
+		pointer-events: auto;
+		// min-height: 300px;
+		border-radius: 10px;
+		border: 1px solid #444;
+	}
+	.swiper-slide:nth-child(3) {
+		padding-left: 0;
+	}
+	.swiper-slide-active {
+		transform: scale(1);
+		opacity: 1;
+	}
+	
+	@media (min-width: 768px) {
+	.swiper-slide {
+		width: 400px;
+	}
+	
+	.swiper-slide iframe {
+		height: 300px;
+		}
+	}
+}
 
 
 
@@ -609,8 +750,15 @@
 	.about__photo {
 		margin-top: 30px;
 	}
+	.modules {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
 @media (max-width: 639.98px) {
+	.section__padding {
+		padding: 50px 0;
+	}
 	.cource__title {
         text-align: center;
     }
@@ -624,6 +772,13 @@
 	.swiper-wrapper {
         margin-left: -160px;
     }
+	.course-header {
+		align-items: flex-start;
+		flex-direction: column;
+		.title__border {
+			margin-bottom: 20px;
+		}
+	}
 }
 @media (max-width: 579.98px) {
 	.action__list {
@@ -648,5 +803,28 @@
 	.swiper-wrapper {
         margin-left: -38px;
     }
+	.box {
+		height: 160px;
+	}
+	.icon {
+		img {
+			width: 54px;
+			height: 54px;
+		}
+	}
+	.large {
+		font-size: 24px;
+	}
+	.main__button {
+		width: 100%;
+	}
+	.reviews-header {
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		.reviews-title {
+			margin-top: 20px;
+		}
+	}
 }
 
