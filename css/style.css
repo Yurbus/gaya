@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ._container {
   max-width: 1340px;
   margin: 0 auto;
@@ -617,9 +618,13 @@
 }
 .mySwiper2 .swiper-slide iframe {
   width: 100%;
-  pointer-events: auto;
+  pointer-events: none; /* по умолчанию отключено */
+  transition: 0.3s ease;
   border-radius: 10px;
   border: 1px solid #444;
+}
+.mySwiper2 .swiper-slide-active iframe {
+  pointer-events: auto; /* только активный слайд может ловить клик */
 }
 .mySwiper2 .swiper-slide:nth-child(3) {
   padding-left: 0;
