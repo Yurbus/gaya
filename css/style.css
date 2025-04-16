@@ -642,6 +642,161 @@
   }
 }
 
+/*============= package =======================*/
+.reviews-header .package-title {
+  text-align: right;
+}
+
+.package__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 64px;
+}
+
+.package__item {
+  border-radius: 12px;
+}
+
+.package__start .package__start-wrap {
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  padding: 32px 24px;
+}
+.package__start .package__start-wrap .pack__title {
+  font-weight: 650;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.package__pro {
+  background: #FF0000;
+  padding: 32px 24px;
+}
+.package__pro .pack__title {
+  font-weight: 650;
+  font-size: 44px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.package__item-list {
+  margin-top: 18px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.package__item-list li {
+  font-weight: 540;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 12px 12px 12px 30px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+.package__item-list li::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.package__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.package__price .package__btn a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px 32px;
+  font-weight: 1000;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+.package__price .package__numm {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.green__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #33FF00;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 21px 18px;
+}
+.green__button .green__button-text {
+  font-weight: 650;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000;
+  margin-right: 10px;
+}
+/*============ faq ==============*/
+.accordion {
+  max-width: 660px;
+  margin: 64px auto 0;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #555;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(14px, 3vw, 20px);
+  font-weight: bold;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(90deg);
+}
+.accordion-item.active .icon svg path {
+  fill: #FF0000;
+}
+
+.accordion-content {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #aaa;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 100px;
+  opacity: 1;
+}
+
 @media (max-width: 1130px) {
   .header__text {
     margin-bottom: 50px;
@@ -683,6 +838,10 @@
   }
   .about__items {
     grid-template-columns: 1fr;
+  }
+  .package__body {
+    grid-template-columns: 1fr;
+    margin-top: 44px;
   }
 }
 @media (max-width: 767.98px) {
@@ -731,6 +890,17 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .reviews-header {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .reviews-header .package-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .reviews-title {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 639.98px) {
   .section__padding {
@@ -769,6 +939,11 @@
   .adw__row-list {
     grid-template-columns: 1fr;
   }
+  .package__price {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 479.98px) {
   .action__button .img_eye {
@@ -800,5 +975,9 @@
   }
   .reviews-header .reviews-title {
     margin-top: 20px;
+  }
+  .accordion-title .icon svg {
+    width: 24px;
+    height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
