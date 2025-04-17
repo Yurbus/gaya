@@ -42,7 +42,7 @@
                                 <li class="red__background">ПОНИМАЙ</li>
                                 <li>НЕ СЛИВАЙ БЮДЖЕТ</li>
                             </ul>
-                            <a href="" class="action__button">
+                            <a href="#popup" class="popup-link action__button">
                                 <div class="action__button-arrow">
                                     Хочу взять под контроль свой маркетинг
                                     <img src="img/red_arrow.svg" alt="">
@@ -78,7 +78,7 @@
                             <h3>
                                 Это нормально. Вы — не маркетолог. Вы — владелец бизнеса.<br>И именно для вас —<span class="red__text">этот курс!</span> 
                             </h3>
-                            <a href="" class="marketing__button main__button">
+                            <a href="#popup" class="popup-link marketing__button main__button">
                                 <div class="marketing__btn-text">
                                     Хочу взять под контроль свой маркетинг 
                                 </div>
@@ -154,7 +154,7 @@
                             </div>
                             <!-- <div class="swiper-pagination"></div> -->
                         </div>
-                        <a href="" class="cource__button main__button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <a href="#popup" class="popup-link cource__button main__button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                             <div class="cource__btn-text">
                                 Посмотреть программу 
                             </div>
@@ -305,7 +305,7 @@
                             </div>
                         
                             <div class="cta-button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                                <a href="" class="cource__button main__button">
+                                <a href="#popup" class="popup-link cource__button main__button">
                                     <div class="cource__btn-text">
                                         Хочу доступ к курсу
                                     </div>
@@ -371,7 +371,7 @@
                                     <li>Видеоуроки + шаблоны + 6 месяцев доступа</li>
                                 </ul>
                                 <div class="package__price">
-                                    <div class="package__btn"><a href="">Выбрать</a></div>
+                                    <div class="package__btn"><a href="#popup" class="popup-link">Выбрать</a></div>
                                     <div class="package__numm">$99</div>
                                 </div>
                             </div>
@@ -388,7 +388,7 @@
                                 <li>PDF-проверка вашей ситуации</li>
                             </ul>
                             <div class="package__price">
-                                <div class="package__btn"><a href="">Выбрать</a></div>
+                                <div class="package__btn"><a href="#popup" class="popup-link">Выбрать</a></div>
                                 <div class="package__numm">$299</div>
                             </div>
                         </div>
@@ -476,7 +476,7 @@
                     <div class="footer__text footer__text-red" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><img src="img/footer-red-text.png" alt=""></div>
                 </div>
                 <div class="footer__button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                    <a href="" class="cource__button main__button">
+                    <a href="#popup" class="popup-link cource__button main__button">
                         <div class="cource__btn-text">
                             Хочу участвовать 
                         </div>
@@ -486,10 +486,28 @@
             </div>
 		</footer>
 
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <form action="" class="form__feedback">
+                        <a href="#" class="popup__close close-popup">✖️</a>
+                        <h3 class="feedback__text">Взять под контроль свой маркетинг</h3>
+                        <div class="input__feedback">
+                            <input type="text" name="name" placeholder="Имя:" />
+                            <input type="phone" name="name" placeholder="Телефон:" />
+                            <input type="email" name="name" placeholder="Email:" />
+                        </div>
+                        <button type="submit" class="feedback__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/popup.js"></script>
 		<script>
 			AOS.init();
 		</script>
